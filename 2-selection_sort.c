@@ -23,8 +23,8 @@ void selection_sort(int *array, size_t size)
 
 		if ((array + i) != min)
 		{
-			temp = array + i;
-			array + i = min;
+			temp = *(array + i);
+			*(array + i) = *min;
 			*min = temp;
 			print_array(array, size);
 		}
