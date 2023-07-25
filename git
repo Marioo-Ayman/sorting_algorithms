@@ -1,0 +1,5 @@
+#!/bin/bash
+num=$1
+git add .
+git commit -m "${num}"
+git push
